@@ -36,7 +36,6 @@ A full-featured e-commerce web application built with PHP, MySQL, and XAMPP for 
 | Backend    | PHP 8.x             |
 | Database   | MySQL (MariaDB)     |
 | Frontend   | HTML, CSS, JavaScript |
-| Payment    | Razorpay            |
 | Server     | XAMPP (Apache)      |
 
 ---
