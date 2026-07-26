@@ -13,7 +13,6 @@ A full-featured e-commerce web application built with PHP, MySQL, and XAMPP for 
 - Add to cart / Buy now
 - Wishlist functionality
 - User registration & login
-- Checkout with Razorpay payment gateway
 - Order tracking & history
 - Contact form
 - About, Privacy Policy, Terms & Conditions pages
@@ -31,12 +30,12 @@ A full-featured e-commerce web application built with PHP, MySQL, and XAMPP for 
 
 ## Tech Stack
 
-| Layer      | Technology          |
-|------------|---------------------|
-| Backend    | PHP 8.x             |
-| Database   | MySQL (MariaDB)     |
+| Layer      | Technology            |
+|------------|-----------------------|
+| Backend    | PHP 8.x               |
+| Database   | MySQL (MariaDB)       |
 | Frontend   | HTML, CSS, JavaScript |
-| Server     | XAMPP (Apache)      |
+| Server     | XAMPP (Apache)        |
 
 ---
 
@@ -44,7 +43,7 @@ A full-featured e-commerce web application built with PHP, MySQL, and XAMPP for 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/mummas-care.git
+   git clone https://github.com/shrutiradadiya/mumma-s-care.git
    ```
 
 2. **Move to XAMPP htdocs**
@@ -55,7 +54,7 @@ A full-featured e-commerce web application built with PHP, MySQL, and XAMPP for 
 3. **Import the database**
    - Open phpMyAdmin: `http://localhost/phpmyadmin`
    - Create a database named `mumma's_care`
-   - Import the SQL file: `fix_db_name.sql`
+   - Import the SQL file: `mumma_s_care.sql`
 
 4. **Start XAMPP**
    - Start Apache and MySQL from XAMPP Control Panel
@@ -67,11 +66,20 @@ A full-featured e-commerce web application built with PHP, MySQL, and XAMPP for 
 
 ---
 
-## Admin Login
+## Login Credentials
 
-```
-URL: http://localhost/E010/E010/admin/admin_login.php
-```
+### Admin
+| Field    | Value                                        |
+|----------|----------------------------------------------|
+| URL      | `http://localhost/E010/E010/admin/admin_login.php` |
+| Username | `mumma's care`                               |
+| Password | `admin@123`                                  |
+
+### User
+| Field | Value                                   |
+|-------|-----------------------------------------|
+| URL   | `http://localhost/E010/E010/pages/login.php` |
+| Register at | `http://localhost/E010/E010/pages/register.php` |
 
 ---
 
