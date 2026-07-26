@@ -84,7 +84,6 @@ E010/
 │   └── uploads/    → Admin-uploaded product images
 ├── includes/       → Shared files (header, footer, db connect)
 ├── pages/          → Customer-facing pages
-├── razorpay-php/   → Razorpay SDK
 └── index.php       → Entry point
 ```
 
