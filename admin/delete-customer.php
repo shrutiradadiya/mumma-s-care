@@ -9,7 +9,7 @@ if (isset($_GET['id'])) {
     $customer_id = $_GET['id'];
 
     // Database Connection
-    $conn = new mysqli("localhost", "root", "", "mumma's_care");
+    $conn = new mysqli(getenv("DB_HOST") ?: "localhost", getenv("DB_USER") ?: "root", getenv("DB_PASS") ?: "", getenv("DB_NAME") ?: "mumma's_care");
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }

@@ -8,7 +8,7 @@ if (!isset($_SESSION['customer_id'])) {
 }
 
 // Database connection
-$conn = new mysqli("localhost", "root", "", "mumma's_care");
+$conn = new mysqli(getenv("DB_HOST") ?: "localhost", getenv("DB_USER") ?: "root", getenv("DB_PASS") ?: "", getenv("DB_NAME") ?: "mumma's_care");
 
 // Get the customer ID from the session
 $customer_id = $_SESSION['customer_id'];
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
     $new_email = $_POST['email'];
 
     // Update the customer's profile information in the database
-    $conn = new mysqli("localhost", "root", "", "mumma's_care");
+    $conn = new mysqli(getenv("DB_HOST") ?: "localhost", getenv("DB_USER") ?: "root", getenv("DB_PASS") ?: "", getenv("DB_NAME") ?: "mumma's_care");
     $update_stmt = $conn->prepare("UPDATE customers SET name = ?, email = ? WHERE id = ?");
     $update_stmt->bind_param("ssi", $new_name, $new_email, $customer_id);
     $update_stmt->execute();
