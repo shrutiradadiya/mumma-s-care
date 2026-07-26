@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://localhost/E010/add_to_cart.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        /* Colorful CSS for the Cart Page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h2 {
+            color: #28a745;
+            margin-top: 30px;
+        }
+
+        .cart-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px auto;
+            width: 70%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+
+        .product-image {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        .product-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-description {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        .remove-item {
+            display: inline-block;
+            background-color: #dc3545;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .remove-item:hover {
+            background-color: #c82333;
+        }
+
+        .checkout-btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 1em;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .checkout-btn:hover {
+            background-color: #218838;
+        }
+
+        .empty-cart {
+            color: #dc3545;
+            font-size: 1.4em;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Your Cart</h2><div class="cart-item"><img src="./Shopping Cart_files/1.jpg" alt="Wowper" class="product-image"><div class="product-details"><p class="product-name">Wowper - ₹600.00</p><p class="product-description">Super soft diapers with excellent absorbency. Perfect for your baby.</p><br>
+
+<a href="http://localhost/E010/remove_cart.php?action=remove&amp;product_id=Array" class="remove-item">Remove</a></div></div><a href="http://localhost/E010/order.php" class="checkout-btn">Proceed to Order</a>
+
+
+</body></html>

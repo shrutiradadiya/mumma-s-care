@@ -1,0 +1,21 @@
+# Dependencies & temp files
+node_modules/
+*.log
+*.tmp
+*.bak
+
+# Uploaded images (user-generated content)
+image/uploads/
+admin/uploads/
+
+# Environment / config secrets
+.env
+config.php
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# XAMPP/PHP temp
+*.swp
+*~
